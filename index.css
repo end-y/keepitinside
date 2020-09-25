@@ -1,0 +1,50 @@
+body{
+    position: absolute;
+    top: 50%;  left: 50%;
+    transform :  translateX(-50%) translateY(-50%)    translateZ(0);
+    background-color: #1099bb;
+  }
+  #giris{
+      display: flex;
+  }
+  #start{
+      background-color: transparent;
+      border: solid #2c3e50 5px;
+      border-left: 0;
+      width: 80px;
+      cursor: pointer;
+      opacity: 0;
+      margin-right: 50px;
+      animation: opacity 2s ease-out forwards;
+      animation-delay: 1s;
+  }
+  #start svg {
+    width: 50px;
+    height: 50px;
+    fill: #2C3E50;
+    transform: rotate(-90deg);
+    transition: all 0.5s;
+
+  }
+  img{
+      animation: opacity 2s ease-out forwards; 
+      opacity: 0;
+  }
+  #start svg:hover{
+    fill: #fff;
+    transform: rotate(0deg);
+  }
+  @keyframes opacity{
+      0%{
+        opacity: 0;
+      }
+      100%{
+        opacity: 1;
+      }
+  }
+  p{
+      text-align: center;
+      font-family: Tahoma, sans-serif;
+      font-weight: bold;
+      color: #fff
+  }
