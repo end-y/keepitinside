@@ -68,6 +68,7 @@ container.children[3].name = "asagi"
 restart.on("click", () => {
     app.destroy();
     document.body.removeChild(document.body.children[3]) 
+    console.log(document.body.children[3])
     start() 
 })
 home.on("click", () => {
