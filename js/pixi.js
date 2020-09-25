@@ -67,7 +67,7 @@ container.children[2].name = "yukari"
 container.children[3].name = "asagi"
 restart.on("click", () => {
     app.destroy();
-    document.body.removeChild(document.body.children[4]) 
+    document.body.removeChild(document.body.children[3]) 
     start() 
 })
 home.on("click", () => {
